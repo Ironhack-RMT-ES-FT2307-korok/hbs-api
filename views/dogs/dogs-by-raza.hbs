@@ -1,0 +1,17 @@
+<div>
+
+  <h3>Todos los perritos por su raza</h3>
+
+  {{#each this.dogs}}
+
+    {{!-- <div>
+      <h2>Foto de perrito</h2>
+      <img src="{{this}}" alt="perrito" width="300px">
+      <p>El mejor perrito del mundo 10/10</p>
+    </div> --}}
+
+    {{>dogpartial this }}
+
+  {{/each}}
+
+</div>

@@ -1,0 +1,20 @@
+<div>
+
+  <h2>Lista de razas</h2>
+
+  {{#each this.razas}}
+    <li>
+      <a href="/perritos/por-raza/{{this}}">{{this}}</a>
+    </li>
+  {{/each}}
+
+
+</div>
+
+<style>
+
+  a:visited {
+    color: orange
+  }
+
+</style>
