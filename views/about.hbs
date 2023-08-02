@@ -1,0 +1,27 @@
+<div>
+
+  <h2>Info sobre mi pagina</h2>
+
+  <h3> Nuestra pagina es de bootcamps de {{this.title}} !!</h3>
+
+
+  <p> Nuestro staff es: </p>
+
+  {{!-- <li>{{this.staff}}</li> --}}
+
+  {{#each this.staff}} 
+
+    <li> {{this}} </li>
+
+  {{/each}}
+
+  {{#if this.isAvailable}}
+
+    <p>Nuestro bootcamp está aceptando estudiantes!</p>
+  {{else}}
+    <p>Por ahora estamos llenos, lo sentimos :(</p>
+
+  {{/if}}
+  
+
+</div>

@@ -1,0 +1,17 @@
+
+<div>
+
+  <h4>Lecciones de acuerdo a aprobación</h4>
+
+  {{#each this.filteredLessons}}
+
+    <div>
+      <h5>{{this.topic}}</h5>
+      <p>Descripcion: {{this.description}}</p>
+      <p>Bootcamp: {{this.bootcamp}}</p>
+    </div>
+
+  {{/each}}
+
+
+</div>
